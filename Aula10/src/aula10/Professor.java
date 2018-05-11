@@ -9,7 +9,7 @@ package aula10;
  *
  * @author palves
  */
-public class Professor {
+public class Professor extends Pessoa{
     private String especialidade;
     private int salario;
     

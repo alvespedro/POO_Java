@@ -15,12 +15,12 @@ public class Pessoa {
     private int idade;
     private String sexo;
     
-    public Pessoa(String nome,int idade,String sexo){
-        this.setNome(nome);
-        this.setIdade(idade);
-        this.setSexo(sexo);
-    }
-    
+//    public Pessoa(String nome,int idade,String sexo){
+//        this.setNome(nome);
+//        this.setIdade(idade);
+//        this.setSexo(sexo);
+//    }
+//    
     //Métodos Setters
     public void setNome(String nome) {
         this.nome = nome;
@@ -50,4 +50,11 @@ public class Pessoa {
     public void fazerAniversario(){
         this.setIdade(this.getIdade()+1);
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + '}';
+    }
+    
+    
 }
